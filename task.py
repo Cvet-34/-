@@ -9,7 +9,7 @@
 from fastapi import APIRouter
 
 #постороение роутенга
-# сможет позволить нам работать по некоторому префексу
+
 router = APIRouter(prefix="/task", tags=["task"])
 
 # пишем методы которые нам позволят удобно взаимодействовать с роутером
@@ -33,5 +33,5 @@ async def update_task():
 @router.delete("/delete")
 async  def delete_task():
     pass
-#это была базовая структура в простроении нашего магазина и далее создадим модели
+
 
